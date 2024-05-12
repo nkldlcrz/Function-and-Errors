@@ -12,10 +12,15 @@ This Solidity smart contract provides examples of how to use `require()`, `asser
 
 The contract includes three functions that showcase the use of the mentioned statements:
 
-* **requireExample(uint256 _value):** This function validates user input (`_value`). It ensures that the input is less than or equal to 10. If not, the transaction is reverted with a clear error message ("Input value must be less than or equal to 10").
-* **assertExample():** This function calculates the sum of `x` and `y` (always 30 in this example). An assertion verifies the expected result (30). If the assertion fails, the transaction is reverted with a generic error message, indicating a potential bug in the code logic.
-* **revertExample():** This function prevents division by zero. If the divisor (`b`) is zero, the transaction is reverted with an informative message ("Divisor cannot be zero").
+* **require(_i > 10, "Input must be greater than 10"); This is a require statement. It ensures that the condition _i > 10 is true, otherwise it will revert the transaction and display the error message "Input must be greater than 10".
 
+  
+* **if (_i <= 10) { revert("Input must be greater than 10"); }: This is an if statement that checks if the condition _i <= 10 is true. If it is true, it will execute the code inside the curly braces.
+
+  
+* **function testAssert() public view {: This line starts the declaration of the function testAssert. It is declared as public, meaning it can be called from outside the contract, and view, indicating that it doesn't modify the contract's state.
+* **assert(num == 0);: This line contains an assert statement. It checks if the value of the state variable num is equal to 0. If the condition evaluates to false, the transaction will revert, reverting any state changes, and consuming all gas.
+  
 ## Understanding the Statements
 
 * **`require()`:** Enforces conditions during function execution. If the condition fails, the transaction is reverted with a custom error message, providing valuable feedback for troubleshooting.

@@ -3,11 +3,11 @@ pragma solidity ^0.8.0;
 
 contract mySmartContract {
 
-    function testRequire(uint _i) public pure {
+    function Require(uint _i) public pure {
         require(_i > 10, "Input must be greater than 10");
     }
 
-    function testRevert(uint _i) public pure {
+    function Revert(uint _i) public pure {
         if (_i <= 10) {
             revert("Input must be greater than 10");
         }
@@ -16,7 +16,7 @@ contract mySmartContract {
 
     uint public num;
 
-    function testAssert() public view {
+    function Assert() public view {
         assert(num == 0);
     }
 }

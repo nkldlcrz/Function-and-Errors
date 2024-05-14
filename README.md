@@ -8,7 +8,7 @@ This smart contract demonstrates the usage of `require()`, `assert()`, and `reve
 
 This Solidity smart contract provides examples of how to use `require()`, `assert()`, and `revert()` for validating user input, checking internal assumptions, and preventing critical errors. Understanding these statements is essential for writing robust smart contracts.
 
-## Functions and Errors
+## Description each Statement and function
 
 The contract includes three functions that showcase the use of the mentioned statements:
 

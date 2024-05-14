@@ -13,6 +13,7 @@ This Solidity smart contract provides examples of how to use `require()`, `asser
 The contract includes three functions that showcase the use of the mentioned statements:
 
 setRate Function: Require Statement
+
 *This function sets the rate to the provided _newRate.
 
 *It uses the require statement to ensure the new rate is greater than the current rate.
@@ -20,11 +21,13 @@ setRate Function: Require Statement
 *The error message has been changed to "New rate must exceed current rate".
 
 checkRateIfFifthy Function: Assert
+
 *This function uses assert to check if the rate is exactly 10.
 
 *If the rate is not 10, it will fail the assertion and revert the transaction.
 
 resetRate Function: Revert
+
 *This function resets the rate to zero.
 
 *It uses an if statement with revert to ensure the rate is not already zero before resetting it.

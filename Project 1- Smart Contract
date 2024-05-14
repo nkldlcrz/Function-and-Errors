@@ -1,22 +1,24 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract mySmartContract {
+contract MySmartcontract {
 
-    function Require(uint _i) public pure {
-        require(_i > 10, "Input must be greater than 10");
+    uint256 public rate;
+
+    function setRate(uint256 _newRate) external {
+        require(_newRate > rate, "New rate must exceed current rate");
+        rate = _newRate;
     }
 
-    function Revert(uint _i) public pure {
-        if (_i <= 10) {
-            revert("Input must be greater than 10");
+ 
+    function checkRateIfifthy() external  view {
+        assert(rate == 50);
+    }
+
+    function resetRate() external {
+        if(rate == 0) {
+            revert("Rate is already zero");
         }
-    }
-
-
-    uint public num;
-
-    function Assert() public view {
-        assert(num == 0);
+        rate = 0;
     }
 }

@@ -33,18 +33,3 @@ MIT License
 ## Author/s
 
 * Nicole D. Bautista (8210179@ntc.edu.ph)
-
-## Getting Started 
-
-This section would typically explain how to deploy the contract to a blockchain network and interact with its functions, but it might not be necessary for a purely educational contract like this one.  
-
-
-* **Interaction:**
-    * Provide step-by-step instructions on how to interact with each function, including any required inputs or expected outputs.
-    * Use code blocks to demonstrate commands.
-
-## Help 
-
-This section could provide guidance on troubleshooting common issues or using the contract effectively. 
-
-  

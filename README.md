@@ -8,31 +8,35 @@ This smart contract demonstrates the usage of `require()`, `assert()`, and `reve
 
 This Solidity smart contract provides examples of how to use `require()`, `assert()`, and `revert()` for validating user input, checking internal assumptions, and preventing critical errors. Understanding these statements is essential for writing robust smart contracts.
 
-## Description each Statement and function
+## Description Each Statement and Function
 
-The contract includes three functions that showcase the use of the mentioned statements:
+Set Item Prices:
 
-setRate Function: Require Statement
+Once the contract is deployed, you can set prices for different items.
+In the "Deployed Contracts" section, find the deployed instance of MysmartcontractItemPricer.
+Expand the contract instance to reveal its functions.
+Find the setItemPrice function and provide the item name and price as arguments.
+Click on the "Transact" button to execute the function.
 
-*This function sets the rate to the provided _newRate.
+Get Item Prices:
 
-*It uses the require statement to ensure the new rate is greater than the current rate.
+You can retrieve the price of an item using the getItemPrice function.
+Enter the name of the item for which you want to check the price in the input field provided.
+Click on the "Call" button to execute the function and view the result.
 
-*The error message has been changed to "New rate must exceed current rate".
+Check Price Validity:
 
-checkRateIfFifthy Function: Assert
+Use the checkPriceValidity function to verify that the price of an item is valid.
+Enter the name of the item for which you want to check the price validity.
+Click on the "Call" button to execute the function.
+If the price is set for the item and not unrealistically high, the function call will succeed. Otherwise, it will revert with an error.
 
-*This function uses assert to check if the rate is exactly 10.
+Reset Item Prices:
 
-*If the rate is not 10, it will fail the assertion and revert the transaction.
+If needed, you can reset the price of an item to zero using the resetItemPrice function.
+Enter the name of the item for which you want to reset the price.
+Click on the "Transact" button to execute the function.
 
-resetRate Function: Revert
-
-*This function resets the rate to zero.
-
-*It uses an if statement with revert to ensure the rate is not already zero before resetting it.
-
-*If the rate is already zero, it will revert with the message "Rate is already zero".
   
 ## License
 
